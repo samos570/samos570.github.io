@@ -31,10 +31,10 @@ world more drastically than when humans harnessed electricity.
 
 I'm a mathematician who has decided to leave college teaching to explore these
 ideas and see where they lead. In these pages I'm going to try to explain all
-sorts of mathematical topics that are needed to get a hand on machine learning,
-in many cases as I learn about them myself. These will range from the very
-basic to the very complex and so my hope is that everyone will be able to find
-a place to get started. If, like me, you're interested in finding out what
+sorts of mathematical topics that are needed to get a handle on machine
+learning, in many cases as I learn about them myself. These will range from the
+very basic to the very complex and so my hope is that everyone will be able to
+find a place to get started. If, like me, you're interested in finding out what
 machine learning is all about, read on.
 
 [deep neural networks]: https://en.wikipedia.org/wiki/Deep_learning

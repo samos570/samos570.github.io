@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-27T08:03:44-04:00</updated><id>http://localhost:4000/</id><title type="html">MathSlant</title><subtitle>A blog about the mathematics of AI.</subtitle><author><name>Justin Keller</name></author><entry><title type="html">The Beginning</title><link href="http://localhost:4000/jekyll/update/welcome-to-jekyll/" rel="alternate" type="text/html" title="The Beginning" /><published>2018-06-26T16:16:27-04:00</published><updated>2018-06-26T16:16:27-04:00</updated><id>http://localhost:4000/jekyll/update/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/welcome-to-jekyll/">&lt;h2 id=&quot;rise-of-the-machines&quot;&gt;Rise of the Machines&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-27T09:55:16-04:00</updated><id>http://localhost:4000/</id><title type="html">MathSlant</title><subtitle>A blog about the mathematics of AI.</subtitle><author><name>Justin Keller</name></author><entry><title type="html">The Beginning</title><link href="http://localhost:4000/the-beginning/" rel="alternate" type="text/html" title="The Beginning" /><published>2018-06-25T00:00:00-04:00</published><updated>2018-06-25T00:00:00-04:00</updated><id>http://localhost:4000/the-beginning</id><content type="html" xml:base="http://localhost:4000/the-beginning/">&lt;h2 id=&quot;rise-of-the-machines&quot;&gt;Rise of the Machines&lt;/h2&gt;
 
 &lt;p&gt;Machine learning is a rapidly developing field at the intersection of computer
 science and mathematics.  Recent breakthroughs in &lt;a href=&quot;https://en.wikipedia.org/wiki/Deep_learning&quot;&gt;deep neural networks&lt;/a&gt; in the
@@ -24,8 +24,8 @@ world more drastically than when humans harnessed electricity.&lt;/p&gt;
 
 &lt;p&gt;I’m a mathematician who has decided to leave college teaching to explore these
 ideas and see where they lead. In these pages I’m going to try to explain all
-sorts of mathematical topics that are needed to get a hand on machine learning,
-in many cases as I learn about them myself. These will range from the very
-basic to the very complex and so my hope is that everyone will be able to find
-a place to get started. If, like me, you’re interested in finding out what
+sorts of mathematical topics that are needed to get a handle on machine
+learning, in many cases as I learn about them myself. These will range from the
+very basic to the very complex and so my hope is that everyone will be able to
+find a place to get started. If, like me, you’re interested in finding out what
 machine learning is all about, read on.&lt;/p&gt;</content><author><name>Justin Keller</name></author><summary type="html">Rise of the Machines</summary></entry></feed>

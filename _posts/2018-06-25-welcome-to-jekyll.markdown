@@ -1,25 +1,44 @@
 ---
 layout: posts
-title:  "Welcome to Jekyll!"
+title:  "The Beginning"
 date:   2018-06-26 16:16:27 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Rise of the Machines
 
-Jekyll also offers powerful support for code snippets:
+Machine learning is a rapidly developing field at the intersection of computer
+science and mathematics.  Recent breakthroughs in [deep neural networks] in the
+last decade are paving the way for amazing applications in the near-term, like
+[self-driving cars] and personal assistants capable of [carrying out human-like
+conversations]. 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+These technologies, which aim to achieve human or superhuman levels of
+performance on very specific tasks, are examples of so-called [narrow
+artificial intelligence]. In the longer term, it might be possible to create an
+[artificial general intelligence] at a human or even superhuman level and the
+ways in which _that_ might change our world are difficult to imagine.  But
+whatever they are, the changes are sure to be profound.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Given the rapid changes that we're likely to see in our lifetimes and the
+degree to which AI is already impacting our lives, it will become increasingly
+important for even non-experts to understand a bit about how artificial
+intelligence works. For example, to make more informed decisions about public
+policy or just to have a better idea about something that could change the
+world more drastically than when humans harnessed electricity. 
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Taking the Plunge
+
+I'm a mathematician who has decided to leave college teaching to explore these
+ideas and see where they lead. In these pages I'm going to try to explain all
+sorts of mathematical topics that are needed to get a hand on machine learning,
+in many cases as I learn about them myself. These will range from the very
+basic to the very complex and so my hope is that everyone will be able to find
+a place to get started. If, like me, you're interested in finding out what
+machine learning is all about, read on.
+
+[deep neural networks]: https://en.wikipedia.org/wiki/Deep_learning
+[self-driving cars]:https://www.wired.com/tag/self-driving-cars/
+[carrying out human-like conversations]: https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html
+[narrow artificial intelligence]: https://en.wikipedia.org/wiki/Weak_AI
+[artificial general intelligence]: https://en.wikipedia.org/wiki/Artificial_general_intelligence

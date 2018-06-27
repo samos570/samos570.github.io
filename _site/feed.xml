@@ -1,13 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-26T18:12:12-04:00</updated><id>http://localhost:4000/</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-06-26T16:16:27-04:00</published><updated>2018-06-26T16:16:27-04:00</updated><id>http://localhost:4000/jekyll/update/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://savos570.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://savos570.github.io/" rel="alternate" type="text/html" /><updated>2018-06-26T23:11:02-04:00</updated><id>https://savos570.github.io/</id><title type="html">MathSlant</title><subtitle>A blog about the mathematics of AI.</subtitle><author><name>Justin Keller</name></author><entry><title type="html">The Beginning</title><link href="https://savos570.github.io/jekyll/update/welcome-to-jekyll/" rel="alternate" type="text/html" title="The Beginning" /><published>2018-06-26T16:16:27-04:00</published><updated>2018-06-26T16:16:27-04:00</updated><id>https://savos570.github.io/jekyll/update/welcome-to-jekyll</id><content type="html" xml:base="https://savos570.github.io/jekyll/update/welcome-to-jekyll/">&lt;h2 id=&quot;rise-of-the-machines&quot;&gt;Rise of the Machines&lt;/h2&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Machine learning is a rapidly developing field at the intersection of computer
+science and mathematics.  Recent breakthroughs in &lt;a href=&quot;https://en.wikipedia.org/wiki/Deep_learning&quot;&gt;deep neural networks&lt;/a&gt; in the
+last decade are paving the way for amazing applications in the near-term, like
+&lt;a href=&quot;https://www.wired.com/tag/self-driving-cars/&quot;&gt;self-driving cars&lt;/a&gt; and personal assistants capable of &lt;a href=&quot;https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html&quot;&gt;carrying out human-like
+conversations&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;These technologies, which aim to achieve human or superhuman levels of
+performance on very specific tasks, are examples of so-called &lt;a href=&quot;https://en.wikipedia.org/wiki/Weak_AI&quot;&gt;narrow
+artificial intelligence&lt;/a&gt;. In the longer term, it might be possible to create an
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Artificial_general_intelligence&quot;&gt;artificial general intelligence&lt;/a&gt; at a human or even superhuman level and the
+ways in which &lt;em&gt;that&lt;/em&gt; might change our world are difficult to imagine.  But
+whatever they are, the changes are sure to be profound.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Given the rapid changes that we’re likely to see in our lifetimes and the
+degree to which AI is already impacting our lives, it will become increasingly
+important for even non-experts to understand a bit about how artificial
+intelligence works. For example, to make more informed decisions about public
+policy or just to have a better idea about something that could change the
+world more drastically than when humans harnessed electricity.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Your Name</name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;h2 id=&quot;taking-the-plunge&quot;&gt;Taking the Plunge&lt;/h2&gt;
+
+&lt;p&gt;I’m a mathematician who has decided to leave college teaching to explore these
+ideas and see where they lead. In these pages I’m going to try to explain all
+sorts of mathematical topics that are needed to get a hand on machine learning,
+in many cases as I learn about them myself. These will range from the very
+basic to the very complex and so my hope is that everyone will be able to find
+a place to get started. If, like me, you’re interested in finding out what
+machine learning is all about, read on.&lt;/p&gt;</content><author><name>Justin Keller</name></author><summary type="html">Rise of the Machines</summary></entry></feed>

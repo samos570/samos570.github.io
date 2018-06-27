@@ -1,6 +1,6 @@
 var store = [{
-        "title": "Welcome to Jekyll!",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["jekyll","update"],
+        "title": "The Beginning",
+        "excerpt":"Rise of the Machines Machine learning is a rapidly developing field at the intersection of computerscience and mathematics. Recent breakthroughs in deep neural networks in thelast decade are paving the way for amazing applications in the near-term, likeself-driving cars and personal assistants capable of carrying out human-likeconversations. These technologies, which...","categories": ["jekyll","update"],
         "tags": [],
-        "url": "http://localhost:4000/jekyll/update/welcome-to-jekyll/",
+        "url": "https://savos570.github.io/jekyll/update/welcome-to-jekyll/",
         "teaser":null}]

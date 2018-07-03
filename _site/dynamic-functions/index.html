@@ -1,0 +1,560 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Dynamic Functions - MathSlant</title>
+<meta name="description" content="How Machines Learn">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MathSlant">
+<meta property="og:title" content="Dynamic Functions">
+<meta property="og:url" content="http://localhost:4000/dynamic-functions/">
+
+
+  <meta property="og:description" content="How Machines Learn">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-06-27T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/dynamic-functions/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Justin Keller",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MathSlant Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+        MathJax.Hub.Config({
+            config: ["MMLorHTML.js"],
+            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+            jax: ["input/TeX"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: false
+            },
+            TeX: {
+                TagSide: "right",
+                TagIndent: ".8em",
+                MultLineWidth: "85%",
+                equationNumbers: {
+                   autoNumber: "AMS",
+                },
+                unicode: {
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
+                }
+            },
+            showProcessingMessages: false
+        });
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">MathSlant</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/" >About</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Justin Keller</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Mathematician on the loose.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Rockland, Maine</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Dynamic Functions">
+    <meta itemprop="description" content="How Machines Learn">
+    <meta itemprop="datePublished" content="June 27, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Dynamic Functions
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#how-machines-learn">How Machines Learn</a>
+    <ul>
+      <li><a href="#example">Example</a></li>
+    </ul>
+  </li>
+  <li><a href="#a-static-family">A Static Family</a></li>
+  <li><a href="#dynamic-functions">Dynamic Functions</a>
+    <ul>
+      <li><a href="#example-1">Example</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h2 id="how-machines-learn">How Machines Learn</h2>
+
+<p>To understand how machine learning happens, we need to know about functions.
+In mathematics, a <strong>function</strong> is just a rule that accepts certain <strong>inputs</strong>
+and assigns to each one a unique <strong>output</strong>. If that sounds a bit vague, it’s
+because functions are very general objects. The inputs and outputs can be
+anything we like and the rule can be whatever we like, as long as each input
+gets one and only one output. In this way, a function is like a machine: it
+doesn’t have to think about what output to assign, because there’s only the one
+choice.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Suppose we have a function \( f \) that accepts real numbers as inputs, and
+in each case outputs a real number. We write this as</p>
+
+<p>\[ f \colon \mathbb{R} \to \mathbb{R} \]</p>
+
+<p>Let’s suppose that rule is</p>
+
+<p>\[ y = f(x) = x^2 \]</p>
+
+<p>This notation means that the output, a real number we’re calling \( y \) is
+obtained via the rule \( f \) from the input \( x \) by squaring the input.</p>
+
+<p>By supplying different inputs, we get different outputs, but the <em>rule</em> \( f
+\) is always the same.</p>
+
+<p>\[ f(2) = 2^2 = 4 \]
+\[ f(3) = 3^2 = 9 \]
+\[ f(0) = 0^2 = 0 \]</p>
+
+<h2 id="a-static-family">A Static Family</h2>
+
+<p>This ordinary type of function could be called a “static” function (not a real
+term) because while the ouput varies, the rule itself never changes. Now let’s
+consider the family of functions</p>
+
+<p>\[ f_c(x) = x^2 + c \]</p>
+
+<p>This is not one function, but rather a set of infinitely many functions with a
+similar form. The value \( c \) that distinguishes one member of this family
+from another is called a <strong>parameter</strong>.</p>
+
+<p>One member of this family is \( f_3 \) which is the rule</p>
+
+<p>\[ f_3(x) = x^2 + 3 \]</p>
+
+<p>and so for example we’d have:</p>
+
+<p>\[ f_3(7) = 7^2 + 3 = 52 \]</p>
+
+<p>but \( f_5 \) or \( f_1 \) are different functions and they produce
+different outputs when given the same input:</p>
+
+<p>\[ f_5(7) = 7^2 + 5 = 54 \]</p>
+
+<p>All of the members of this family are individually “static” functions.</p>
+
+<h2 id="dynamic-functions">Dynamic Functions</h2>
+
+<p>Now suppose we make a new kind of function, a “dynamic” function (also not a
+real term) that works as follows:</p>
+
+<ol>
+  <li><strong>(Initialize)</strong> Ranomdly pick a value of \( c \) to start.</li>
+  <li><strong>(Data)</strong> Using that member of the family, feed it an input.</li>
+  <li><strong>(Calculate Loss)</strong> After each the value of \[ L(x,y) = y - x \] where
+\( y \) is the output of our function.</li>
+  <li><strong>(Update Parameters)</strong> Subract \( (0.1)(2x-1) \) from the current value
+of \( c \) to get a new value.  Using this new parameter, repeat steps
+2–4 as many times as desired.</li>
+</ol>
+
+<p>Leaving aside for now where this set of steps comes from, notice that what we’ve
+created is a function that always uses a rule of the form</p>
+
+<p>\[ f_c(x) = x^2 + c \]</p>
+
+<p>but the exact rule that gets applied depends on the inputs that are fed into
+the function. It even depends on the <em>ordering</em> in which the inputs are
+suppplied, since this will cause updates to the parameter, which will change
+the rule, which changes what is done with next input, and so on.</p>
+
+<h3 id="example-1">Example</h3>
+
+<p>Suppose we initialize \( c=1 \) and feed in the <strong>training</strong> data</p>
+
+<p>\[ T = (10, 12, 9, 14, 11) \]</p>
+
+<p>Then at each step the output, loss, and new parameter value is given in the
+table below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">input \(x\)</th>
+      <th style="text-align: center">parameter \(c\)</th>
+      <th style="text-align: center">output \(y\)</th>
+      <th style="text-align: center">loss \(L\)</th>
+      <th style="text-align: center">new parameter \(c\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">101</td>
+      <td style="text-align: center">91</td>
+      <td style="text-align: center">-0.9</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">-0.9</td>
+      <td style="text-align: center">144.81</td>
+      <td style="text-align: center">131.1</td>
+      <td style="text-align: center">-3.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">-3.2</td>
+      <td style="text-align: center">77.8</td>
+      <td style="text-align: center">68.8</td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-06-27T00:00:00-04:00">June 27, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Dynamic+Functions%20http%3A%2F%2Flocalhost%3A4000%2Fdynamic-functions%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdynamic-functions%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fdynamic-functions%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdynamic-functions%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/the-beginning/" class="pagination--pager" title="The Beginning
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/the-beginning/" rel="permalink">The Beginning
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Rise of the Machines
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Justin Keller. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

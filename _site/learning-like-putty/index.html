@@ -1,0 +1,533 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Learning Like Putty - MathSlant</title>
+<meta name="description" content="How does machine learning work? An analogy.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MathSlant">
+<meta property="og:title" content="Learning Like Putty">
+<meta property="og:url" content="https://samos570.github.io/learning-like-putty/">
+
+
+  <meta property="og:description" content="How does machine learning work? An analogy.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-07-09T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://samos570.github.io/learning-like-putty/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Justin Keller",
+      "url": "https://samos570.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MathSlant Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+        MathJax.Hub.Config({
+            config: ["MMLorHTML.js"],
+            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+            jax: ["input/TeX"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: false
+            },
+            TeX: {
+                TagSide: "right",
+                TagIndent: ".8em",
+                MultLineWidth: "85%",
+                equationNumbers: {
+                   autoNumber: "AMS",
+                },
+                unicode: {
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
+                }
+            },
+            showProcessingMessages: false
+        });
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">MathSlant</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://samos570.github.io/about/" >About</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Justin Keller</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Mathematician on the loose.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Rockland, Maine</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Learning Like Putty">
+    <meta itemprop="description" content="How does machine learning work? An analogy.">
+    <meta itemprop="datePublished" content="July 09, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Learning Like Putty
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#how-does-machine-learning-work-an-analogy">How does machine learning work? An analogy.</a></li>
+  <li><a href="#most-problems-are-just-topographical-maps">Most problems are just topographical maps.</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h2 id="how-does-machine-learning-work-an-analogy">How does machine learning work? An analogy.</h2>
+
+<p>Let’s start with an analogy. Suppose you want to make a model of a complicated
+surface, like a topographical map of the United States. One way would be to
+make many detailed careful measurements, and create a set of blueprints for
+recreating all the individual mountains and valleys on the map, then build your
+model from those measurements.</p>
+
+<p>What you created with your measurements was a set of detailed instructions for
+recreating that specific map. If the map was swapped out with another one, say
+a topographical map of Canada, your measurements would no longer be helpful.</p>
+
+<p>What are the features of this approach?</p>
+
+<ul>
+  <li>The new model is only as good as the measurements made, which could be prone
+to human error.</li>
+  <li>The solution is labor intensive, since many painstaking measurements would be
+required.</li>
+  <li>The solution is non-transferable: it won’t work on a different problem, for
+example if we change the map, without basically starting over from scratch.</li>
+</ul>
+
+<p>Now suppose instead that we made our model by pouring some kind of liquid putty
+over the map and letting it harden. The putty is like a blank slate that
+<em>learns</em> the contours of the map, without us directing it where to go. What is
+directing the putty? In this case, just gravity, i.e. a fairly simple rule that
+acts on the molecules of the putty.</p>
+
+<p>Nevertheless, after the process, the putty now in some sense contains all of
+the relevant information of the map. We’ve created a mold of the map that 
+<em>knows</em> about all of the mountains and valleys and so on.</p>
+
+<p>What if the topographical map of the U.S. was swapped out for a map of Canada?
+The procedure would need to be repeated, but the exact same substance (the
+putty) can be used, and the steps are the same: let the putty flow over the map
+and harden.</p>
+
+<p>What are the features of the putty approach?</p>
+
+<ul>
+  <li>Depending on the properties of the putty, it could actually learn to make a
+better model (or a worse one) than a human measuring by hand.</li>
+  <li>It requires little to no mental labor: the <em>learning</em> of the shape of the
+terrain is essentially a mechanical process governed by simple rules.</li>
+  <li>The solution isn’t specific to the input - we could learn one map or another
+using the same putty.</li>
+</ul>
+
+<p>This is in many ways what machine learning and especially deep learning is all
+about: you start with an extremely flexible model like the putty, that can take
+on many different shapes. This might be a mathematical model with many
+parameters that can be adjusted. An extremely promising model currently being
+used for this purpose in all sorts of applications is the deep neural network.</p>
+
+<p>Once you have your putty, you need some data that defines your problem. This is
+like the original topographical map. The data has some shape that we want to
+learn. The putty is allowed to change its shape, little by little, according to
+some simple rules. While the actual putty moves to minimize the gravitational
+potential energy, the neural network moves to optimize according to a goal or
+rule that you’ve set in advance, like minimizing some error. By the end, the
+putty has learned the shape of the map, or the neural network has learned the
+<em>shape</em> of the data.</p>
+
+<h2 id="most-problems-are-just-topographical-maps">Most problems are just topographical maps.</h2>
+
+<p>The beauty of this approach is that most problems can be reduced to this
+problem of letting the putty learn to copy the topographical map. All data
+lives in some mathematical space. For example, pictures of human faces can be
+reduced to pixels, which can be reduced to a list of the colors of the pixels,
+and those colors can be represented by numbers. So a picture of a human face is
+a list of numbers. Viewing those numbers as coordinates, the human face becomes
+a single point in the space of all possible images of a certain resolution. If
+we want to learn to recognize human faces, we really just want to learn the
+shape of all points in that larger space that actually represent human faces.
+We want to learn the topography of a certain landscape, in other words.</p>
+
+<p>The manifold hypothesis is the idea that real world data sets (like pictures of
+faces) in practice often have a relatively simple shape, out of all the
+possible shapes they could have in principle (not the shape of faces, remember,
+but the shape of the set of all possible human faces). The deep neural network
+is a flexible enough object that it can learn the mountains and valleys of this
+shape, all the small idiosyncrasies. For many kinds of data, this can already
+be done at levels of skill beyond what humans can do on their own.</p>
+
+<p>So for example, if we wanted to write a computer program that recognized human
+faces, we’d have to write code – an explicit algorithm – that described
+everything we consciously know about human faces, the colors, the shapes, etc.
+about how to tell if the picture we see is a face. This would be extremely
+difficult and not very accurate.</p>
+
+<p>Even more so because we our brain recognizes a face, we likely can do it
+without even thinking about it! We don’t have to think: does it have the
+features and shapes and colors I expect? No, we just instantly realize it as a
+face. This is because our brains are like a giant implementation of the putty:
+a real-life neural network that has already been molded by our genes and our
+experience to learn the topographical map of human faces. If we can’t
+consciously express all of the rules by which we recognize faces, then we have
+no real hope of writing those rules into an explicit algorithm. This is where
+machine learning comes in. Instead of trying to write out the ruled explicitly,
+i.e. making explicit measurements of every mountain and valley of the
+face-space, we just create a putty, the neural network, and allow it to flow
+over some data. In the end, we get a model that can recognize a human face that
+works in much the same way our own brain recognizes a human face. With enough
+training data and a big enough neural network, it could in principle learn to
+recognize faces better and faster than a human brain. Yikes!</p>
+
+<p>Anyway, if you’ve read this far, you’ve got the basic idea of deep learning:
+it’s all about the putty.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-07-09T00:00:00-04:00">July 09, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Learning+Like+Putty%20https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/the-beginning/" class="pagination--pager" title="The Beginning
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/the-beginning/" rel="permalink">The Beginning
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Rise of the Machines
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Justin Keller. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,8 +1,9 @@
 ---
+layout: single
 title:  "Learning Like Putty"
-mathjax: true
-toc: true
-toc_sticky: true
+header:
+  overlay_image: /assets/images/topomap.png
+  caption: "Photo credit: Koba-chan [Public domain], from Wikimedia Commons created on Demis Map Server"
 ---
 
 ## How does machine learning work? An analogy.

@@ -1,5 +1,9 @@
 ---
+layout: single
 title:  "The Beginning"
+header:
+  image: /assets/images/robot.png
+  caption: "Photo credit: By Bilboq [Public domain], from Wikimedia Commons"
 ---
 
 ## Rise of the Machines

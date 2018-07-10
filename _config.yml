@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "MathSlant"
+title                    : "samos570.github.io"
 title_separator          : "-"
 name                     : "Justin Keller"
 description              : "A blog about the mathematics of AI."
@@ -103,11 +103,11 @@ analytics:
 # Site Author
 author:
   name             : "Justin Keller"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Jphoto.png"
   bio              : "Mathematician on the loose."
   location         : "Rockland, Maine"
-  email            :
-  uri              :
+  email            : "samos570bc@gmail.com"
+  uri              : 
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -115,13 +115,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "samos570"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "justin-keller-2807b5167" # (last part of profile url)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)

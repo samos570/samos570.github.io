@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://samos570.github.io/the-beginning/</loc>
+<loc>http://localhost:4000/the-beginning/</loc>
 <lastmod>2018-06-25T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>https://samos570.github.io/learning-like-putty/</loc>
+<loc>http://localhost:4000/learning-like-putty/</loc>
 <lastmod>2018-07-09T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>https://samos570.github.io/404/</loc>
+<loc>http://localhost:4000/404/</loc>
 </url>
 <url>
-<loc>https://samos570.github.io/about/</loc>
+<loc>http://localhost:4000/about/</loc>
 </url>
 <url>
-<loc>https://samos570.github.io/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 </urlset>

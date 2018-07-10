@@ -115,7 +115,7 @@ speaking) that our own brain recognizes a human face. With enough training data
 and a big enough neural network, it could in principle learn to recognize faces
 better and faster than a human brain. 
 
-Here's a [example][celebrity faces] where some researches trained a neural
+Here's an [example][celebrity faces] where some researches trained a neural
 network to learn the manifold of celebrity faces. Then, since any point in that
 space should correspond to a celebrity-like face, they can generate new faces
 of non-real celebrities by picking random  points in that space!

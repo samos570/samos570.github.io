@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-09T13:25:23-04:00</updated><id>http://localhost:4000/</id><title type="html">samos570.github.io</title><subtitle>A blog about the mathematics of AI.</subtitle><author><name>Justin Keller</name><email>samos570bc@gmail.com</email></author><entry><title type="html">Learning Like Putty</title><link href="http://localhost:4000/learning-like-putty/" rel="alternate" type="text/html" title="Learning Like Putty" /><published>2018-07-09T00:00:00-04:00</published><updated>2018-07-09T00:00:00-04:00</updated><id>http://localhost:4000/learning-like-putty</id><content type="html" xml:base="http://localhost:4000/learning-like-putty/">&lt;h2 id=&quot;how-does-machine-learning-work-an-analogy&quot;&gt;How does machine learning work? An analogy.&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://samos570.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://samos570.github.io/" rel="alternate" type="text/html" /><updated>2018-08-29T13:49:27-04:00</updated><id>https://samos570.github.io/</id><title type="html">samos570.github.io</title><subtitle>A blog about the mathematics of AI.</subtitle><author><name>Justin Keller</name><email>samos570bc@gmail.com</email></author><entry><title type="html">Bias in the Shadows</title><link href="https://samos570.github.io/bias-in-the-shadows/" rel="alternate" type="text/html" title="Bias in the Shadows" /><published>2018-08-29T00:00:00-04:00</published><updated>2018-08-29T00:00:00-04:00</updated><id>https://samos570.github.io/bias-in-the-shadows</id><content type="html" xml:base="https://samos570.github.io/bias-in-the-shadows/">&lt;h2 id=&quot;understanding-bias&quot;&gt;Understanding Bias&lt;/h2&gt;
+
+&lt;p&gt;Mathematics has a connotation of being purely objective, and this is a
+well-deserved distinction. Once we agree on some precisely defined objects, and
+some underlying rules governing them, called axioms, then a valid proof of a
+new statement about those objects by a mathematician in one place is verifiable
+by a mathematician somewhere else and no other persuasion is necessary. For
+instance, once we agree about what we mean by the terms triangle, length, and
+Euclidean plane, and decide on our axioms, then it can be concluded beyond any
+doubt that the sum of any two triangle side lengths &lt;a href=&quot;https://en.wikipedia.org/wiki/Triangle_inequality&quot;&gt;must
+be&lt;/a&gt; at least as long as the length of the third side.&lt;/p&gt;
+
+&lt;p&gt;Because of this, we can fall into a mistake of seeing the results of predictive
+mathematical models as being similarly beyond question. The problem with this
+is that we’re conflating two things: on one hand, the mathematical model for a
+situation, which exists purely abstractly and almost always involves
+simplifications in order to be useful, and on the other hand, the messy
+real-world system that is being modeled. British statistician &lt;a href=&quot;https://en.wikipedia.org/wiki/George_E._P._Box&quot;&gt;George
+Box&lt;/a&gt; is credited with the aphorism that succinctly captures this
+idea:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All models are wrong but some are useful.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Deep learning models are generally statistical models by nature. They are
+informed by data, and the data used in the process of training a model is
+almost always a subset, called a sample, of the total data that could
+theoretically be collected in the real world. Imagine a model trained to 
+recognize when a photograph contains a cat. This model might be trained on
+thousands or even millions of pictures of cats. But that’s still just a small
+portion of the set of all possible pictures of all existing cats.&lt;/p&gt;
+
+&lt;h3 id=&quot;statistical-sampling-error-and-biased-samples&quot;&gt;Statistical Sampling Error and Biased Samples&lt;/h3&gt;
+
+&lt;p&gt;When sample data is collected in the sciences, there are always differences
+between the characteristics of the sample and the characteristics of the
+overall population from which the sample was drawn. Some of those differences
+are due to randomness. For example, a random sample of adult males might
+have an average height that’s a little larger or a little smaller than the
+overall population average height of all adult males. The difference between
+these two averages is called sampling error. If data was collected in such a
+way that in the long run, these sampling errors would average out to zero, then
+statisticians would not consider this to be a biased sample for the purposes of
+estimating the average height. In other words, sampling error is viewed as a
+necessary feature of the process of random sampling.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, when samples are drawn in such a way that the possible
+sampling errors do not average to zero, then a biased sample has been
+collected. If the bias is understood, this might still give useful information,
+but treating biased samples as though they are unbiased can be a significant
+source of systematic errors. There are many ways that bias can creep into
+sample data, but the important distinction here is that bias in this sense is
+not about the data, but about the methodology by which the data was collected.&lt;/p&gt;
+
+&lt;p&gt;In science, the focus is on understanding and eliminating systematic errors
+because as experiments are repeated, the random sampling errors will average
+out. This assumes that experiments will be repeated. Failure to repeat
+experiments can still lead to mistaking sampling errors for real phenomena.&lt;/p&gt;
+
+&lt;h3 id=&quot;bias-in-training-data&quot;&gt;Bias in Training Data&lt;/h3&gt;
+
+&lt;p&gt;This distinction mostly disappears in practice when we talk about sample data
+used to train machine learning models, because these models are often trained
+on existing data sets, so the model creator may have no control over the
+methodology by which the data was collected. Machine learning models generally
+improve their performance as the training sets grow larger. Because of limited
+resources, this creates an incentive to train a model using all of the data
+available. But in practice, it’s unlikely that the sample consisting of all
+available data was drawn in an unbiased way. Furthermore, even if the sample is
+unbiased in the statistical sense above, any known differences in the
+characteristics of the training data and the characteristics of the actual
+population become important to consider, if those models are then used to guide
+decisions with real-world consequences.&lt;/p&gt;
+
+&lt;p&gt;Consider for example models being used by judges to predict recidivism rates,
+the likelihood that someone will commit another crime. Various characteristics,
+such as age, the crime committed, the number of prior offenses, are fed into
+the model, and it outputs a probability score. The judge can then use this
+score when deciding someone’s sentence. Someone the model decides is at high
+risk to commit another crime might get a longer sentence from a judge than
+someone at low risk to commit another crime, all other things being equal.&lt;/p&gt;
+
+&lt;p&gt;But some of these models have been shown to have a &lt;a href=&quot;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&quot;&gt;racial
+bias&lt;/a&gt;, even though there is no explicit race data used as an
+input. The problem is that the data used to train the model is from a &lt;em&gt;biased
+sample&lt;/em&gt;, reflecting other systematic racial biases in the criminal justice
+system.&lt;/p&gt;
+
+&lt;p&gt;So what can be done to prevent biased predictions?&lt;/p&gt;
+
+&lt;h2 id=&quot;mitigating-bias&quot;&gt;Mitigating Bias&lt;/h2&gt;
+
+&lt;p&gt;In order to avoid making biased predictions, the most important thing we can do
+is have transparency. Transparency in data collection and model construction
+are key to exposing potential bias. When data sets and models are made publicly
+available, statisticians and domain experts have the opportunity to check for
+biases that the model creators may have missed.&lt;/p&gt;
+
+&lt;p&gt;One driving force against this kind of transparency is the profit motive.
+Certain models might be closely guarded trade secrets, and data sets from which
+key insights might be gleaned are frequently bought and sold.&lt;/p&gt;
+
+&lt;p&gt;Another roadblock to transparency is privacy. Much of the data collected online
+is personal information that may have been voluntarily shared, but for which
+the sharer has an expectation that the information will not be made public. If
+that data is then used in predictive modeling, how can we know whether or not
+those predictions are biased?&lt;/p&gt;
+
+&lt;p&gt;Data-driven machine learning models already impact many aspects of our lives,
+through services provided by Facebook, Google, and other tech giants, and new
+applications emerge every day. Overall, machine learning models offer amazing
+potential to positively impact our lives. But as their influence increases, and
+especially in situations where the consequences could be life-altering in ways
+large and small, we should demand transparency wherever possible, while still
+protecting privacy. Without transparency, bias will inevitably thrive in the
+shadows.&lt;/p&gt;</content><author><name>Justin Keller</name><email>samos570bc@gmail.com</email></author><summary type="html">Understanding Bias</summary></entry><entry><title type="html">Learning Like Putty</title><link href="https://samos570.github.io/learning-like-putty/" rel="alternate" type="text/html" title="Learning Like Putty" /><published>2018-07-09T00:00:00-04:00</published><updated>2018-07-09T00:00:00-04:00</updated><id>https://samos570.github.io/learning-like-putty</id><content type="html" xml:base="https://samos570.github.io/learning-like-putty/">&lt;h2 id=&quot;how-does-machine-learning-work-an-analogy&quot;&gt;How does machine learning work? An analogy.&lt;/h2&gt;
 
 &lt;p&gt;Let’s start with an analogy. Suppose you want to make a model of a complicated
 surface, like a topographical map of the United States. One way would be to
@@ -6,9 +122,10 @@ make many detailed careful measurements, and create a set of blueprints for
 recreating all the individual mountains and valleys on the map, then build your
 model from those measurements.&lt;/p&gt;
 
-&lt;p&gt;What you created with your measurements was a set of detailed instructions for
-recreating that specific map. If the map was swapped out with another one, say
-a topographical map of Canada, your measurements would no longer be helpful.&lt;/p&gt;
+&lt;p&gt;What you’ve created with your measurements is basically a set of detailed
+instructions for recreating that specific map. If the map was swapped out with
+another one, say a topographical map of Canada, your measurements would no
+longer be helpful.&lt;/p&gt;
 
 &lt;p&gt;What are the features of this approach?&lt;/p&gt;
 
@@ -56,11 +173,11 @@ used for this purpose in all sorts of applications is the deep neural network.&l
 &lt;p&gt;Once you have your putty, you need some data that defines your problem. This is
 like the original topographical map. The data has some shape that we want to
 learn. The putty is allowed to change its shape, little by little, according to
-some simple rules. While the actual putty moves to minimize the gravitational
-potential energy, the neural network moves to optimize according to a goal or
-rule that you’ve set in advance, like minimizing some error. By the end, the
-putty has learned the shape of the map, or the neural network has learned the
-&lt;em&gt;shape&lt;/em&gt; of the data.&lt;/p&gt;
+some simple rules. While the actual putty changes and settles in a way that
+minimizes the gravitational potential energy, the neural network parameters
+change little by little to minimize some quantity you’ve chosen in advance,
+such as an error function. By the end, the putty has learned the shape of the
+map, or the neural network has learned the &lt;em&gt;shape&lt;/em&gt; of the data.&lt;/p&gt;
 
 &lt;h2 id=&quot;most-problems-are-just-topographical-maps&quot;&gt;Most problems are just topographical maps.&lt;/h2&gt;
 
@@ -72,16 +189,18 @@ and those colors can be represented by numbers. So a picture of a human face is
 a list of numbers. Viewing those numbers as coordinates, the human face becomes
 a single point in the space of all possible images of a certain resolution. If
 we want to learn to recognize human faces, we really just want to learn the
-shape of all points in that larger space that actually represent human faces.
-We want to learn the topography of a certain landscape, in other words.&lt;/p&gt;
+shape of the collection of all points in that larger space that actually
+represent human faces.  We want to learn the topography of a certain landscape,
+in other words.&lt;/p&gt;
 
-&lt;p&gt;The manifold hypothesis is the idea that real world data sets (like pictures of
-faces) in practice often have a relatively simple shape, out of all the
-possible shapes they could have in principle (not the shape of faces, remember,
-but the shape of the set of all possible human faces). The deep neural network
-is a flexible enough object that it can learn the mountains and valleys of this
-shape, all the small idiosyncrasies. For many kinds of data, this can already
-be done at levels of skill beyond what humans can do on their own.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://stats.stackexchange.com/questions/66939/what-is-the-manifold-assumption-in-semi-supervised-learning&quot;&gt;manifold hypothesis&lt;/a&gt; is the idea that real world data
+sets (like pictures of faces) in practice often have a relatively simple shape,
+out of all the possible shapes they could have in principle (not the shape of
+faces, remember, but the shape of the set of all possible human faces). The
+deep neural network is a flexible enough object that it can learn the mountains
+and valleys of this shape, all the small idiosyncrasies. For many kinds of
+data, this can already be done at levels of skill beyond what humans can do on
+their own.&lt;/p&gt;
 
 &lt;p&gt;So for example, if we wanted to write a computer program that recognized human
 faces, we’d have to write code – an explicit algorithm – that described
@@ -89,24 +208,32 @@ everything we consciously know about human faces, the colors, the shapes, etc.
 about how to tell if the picture we see is a face. This would be extremely
 difficult and not very accurate.&lt;/p&gt;
 
-&lt;p&gt;Even more so because we our brain recognizes a face, we likely can do it
-without even thinking about it! We don’t have to think: does it have the
-features and shapes and colors I expect? No, we just instantly realize it as a
-face. This is because our brains are like a giant implementation of the putty:
-a real-life neural network that has already been molded by our genes and our
-experience to learn the topographical map of human faces. If we can’t
-consciously express all of the rules by which we recognize faces, then we have
-no real hope of writing those rules into an explicit algorithm. This is where
-machine learning comes in. Instead of trying to write out the ruled explicitly,
-i.e. making explicit measurements of every mountain and valley of the
-face-space, we just create a putty, the neural network, and allow it to flow
-over some data. In the end, we get a model that can recognize a human face that
-works in much the same way our own brain recognizes a human face. With enough
-training data and a big enough neural network, it could in principle learn to
-recognize faces better and faster than a human brain. Yikes!&lt;/p&gt;
+&lt;p&gt;Even more so because when we recognizes a face, we likely can do it without
+even thinking about it! We don’t have to stop and think: does it have the
+features and shapes and colors I expect? No, instead we just more or less
+instantly realize it as a face. This is because our brains are like a giant
+implementation of the putty: a real-life neural network that has already been
+molded by our genes and our experience to learn the topographical map of human
+face-space, inside the larger space of all images. If we can’t consciously
+express all of the rules by which we recognize faces, then we have no real hope
+of writing those rules into an explicit algorithm.&lt;/p&gt;
+
+&lt;p&gt;This is where machine learning comes in. Instead of trying to write out the
+rules explicitly, i.e.  making explicit measurements of every mountain and
+valley of the face-space, we just create a putty, the neural network, and allow
+it to flow over some data. In this case, lots of pictures. In the end, we get a
+model that can recognize a human face that works in much the same way (broadly
+speaking) that our own brain recognizes a human face. With enough training data
+and a big enough neural network, it could in principle learn to recognize faces
+better and faster than a human brain.&lt;/p&gt;
+
+&lt;p&gt;Here’s an &lt;a href=&quot;https://www.youtube.com/watch?v=G06dEcZ-QTg&quot;&gt;example&lt;/a&gt; where some researches trained a neural
+network to learn the manifold of celebrity faces. Then, since any point in that
+space should correspond to a celebrity-like face, they can generate new faces
+of non-real celebrities by picking random  points in that space!&lt;/p&gt;
 
 &lt;p&gt;Anyway, if you’ve read this far, you’ve got the basic idea of deep learning:
-it’s all about the putty.&lt;/p&gt;</content><author><name>Justin Keller</name><email>samos570bc@gmail.com</email></author><summary type="html">How does machine learning work? An analogy.</summary></entry><entry><title type="html">The Beginning</title><link href="http://localhost:4000/the-beginning/" rel="alternate" type="text/html" title="The Beginning" /><published>2018-06-25T00:00:00-04:00</published><updated>2018-06-25T00:00:00-04:00</updated><id>http://localhost:4000/the-beginning</id><content type="html" xml:base="http://localhost:4000/the-beginning/">&lt;h2 id=&quot;rise-of-the-machines&quot;&gt;Rise of the Machines&lt;/h2&gt;
+it’s all about the putty.&lt;/p&gt;</content><author><name>Justin Keller</name><email>samos570bc@gmail.com</email></author><summary type="html">How does machine learning work? An analogy.</summary></entry><entry><title type="html">The Beginning</title><link href="https://samos570.github.io/the-beginning/" rel="alternate" type="text/html" title="The Beginning" /><published>2018-06-25T00:00:00-04:00</published><updated>2018-06-25T00:00:00-04:00</updated><id>https://samos570.github.io/the-beginning</id><content type="html" xml:base="https://samos570.github.io/the-beginning/">&lt;h2 id=&quot;rise-of-the-machines&quot;&gt;Rise of the Machines&lt;/h2&gt;
 
 &lt;p&gt;Machine learning is a rapidly developing field at the intersection of computer
 science and mathematics.  Recent breakthroughs in &lt;a href=&quot;https://en.wikipedia.org/wiki/Deep_learning&quot;&gt;deep neural networks&lt;/a&gt; in the

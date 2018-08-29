@@ -1,0 +1,616 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bias in the Shadows - samos570.github.io</title>
+<meta name="description" content="Understanding Bias">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="samos570.github.io">
+<meta property="og:title" content="Bias in the Shadows">
+<meta property="og:url" content="https://samos570.github.io/bias-in-the-shadows/">
+
+
+  <meta property="og:description" content="Understanding Bias">
+
+
+
+  <meta property="og:image" content="https://samos570.github.io/assets/images/chess.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2018-08-29T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://samos570.github.io/bias-in-the-shadows/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Justin Keller",
+      "url": "https://samos570.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="samos570.github.io Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+        MathJax.Hub.Config({
+            config: ["MMLorHTML.js"],
+            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+            jax: ["input/TeX"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: false
+            },
+            TeX: {
+                TagSide: "right",
+                TagIndent: ".8em",
+                MultLineWidth: "85%",
+                equationNumbers: {
+                   autoNumber: "AMS",
+                },
+                unicode: {
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
+                }
+            },
+            showProcessingMessages: false
+        });
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">samos570.github.io</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://samos570.github.io/about/" >About</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(200,200,200,0.8), rgba(200,200,200,0.8)), url('/assets/images/chess.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Bias in the Shadows
+
+        
+      </h1>
+      
+        <p class="page__lead"><h2 id="understanding-bias">Understanding Bias</h2>
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: Max Pixel [CC0 Public domain] https://www.maxpixel.net/
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/Jphoto.png" alt="Justin Keller" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Justin Keller</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Mathematician on the loose.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Rockland, Maine</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:samos570bc@gmail.com">
+            <meta itemprop="email" content="samos570bc@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/justin-keller-2807b5167" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/samos570" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bias in the Shadows">
+    <meta itemprop="description" content="Understanding Bias">
+    <meta itemprop="datePublished" content="August 29, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="understanding-bias">Understanding Bias</h2>
+
+<p>Mathematics has a connotation of being purely objective, and this is a
+well-deserved distinction. Once we agree on some precisely defined objects, and
+some underlying rules governing them, called axioms, then a valid proof of a
+new statement about those objects by a mathematician in one place is verifiable
+by a mathematician somewhere else and no other persuasion is necessary. For
+instance, once we agree about what we mean by the terms triangle, length, and
+Euclidean plane, and decide on our axioms, then it can be concluded beyond any
+doubt that the sum of any two triangle side lengths <a href="https://en.wikipedia.org/wiki/Triangle_inequality">must
+be</a> at least as long as the length of the third side.</p>
+
+<p>Because of this, we can fall into a mistake of seeing the results of predictive
+mathematical models as being similarly beyond question. The problem with this
+is that we’re conflating two things: on one hand, the mathematical model for a
+situation, which exists purely abstractly and almost always involves
+simplifications in order to be useful, and on the other hand, the messy
+real-world system that is being modeled. British statistician <a href="https://en.wikipedia.org/wiki/George_E._P._Box">George
+Box</a> is credited with the aphorism that succinctly captures this
+idea:</p>
+
+<blockquote>
+  <p>All models are wrong but some are useful.</p>
+</blockquote>
+
+<p>Deep learning models are generally statistical models by nature. They are
+informed by data, and the data used in the process of training a model is
+almost always a subset, called a sample, of the total data that could
+theoretically be collected in the real world. Imagine a model trained to 
+recognize when a photograph contains a cat. This model might be trained on
+thousands or even millions of pictures of cats. But that’s still just a small
+portion of the set of all possible pictures of all existing cats.</p>
+
+<h3 id="statistical-sampling-error-and-biased-samples">Statistical Sampling Error and Biased Samples</h3>
+
+<p>When sample data is collected in the sciences, there are always differences
+between the characteristics of the sample and the characteristics of the
+overall population from which the sample was drawn. Some of those differences
+are due to randomness. For example, a random sample of adult males might
+have an average height that’s a little larger or a little smaller than the
+overall population average height of all adult males. The difference between
+these two averages is called sampling error. If data was collected in such a
+way that in the long run, these sampling errors would average out to zero, then
+statisticians would not consider this to be a biased sample for the purposes of
+estimating the average height. In other words, sampling error is viewed as a
+necessary feature of the process of random sampling.</p>
+
+<p>On the other hand, when samples are drawn in such a way that the possible
+sampling errors do not average to zero, then a biased sample has been
+collected. If the bias is understood, this might still give useful information,
+but treating biased samples as though they are unbiased can be a significant
+source of systematic errors. There are many ways that bias can creep into
+sample data, but the important distinction here is that bias in this sense is
+not about the data, but about the methodology by which the data was collected.</p>
+
+<p>In science, the focus is on understanding and eliminating systematic errors
+because as experiments are repeated, the random sampling errors will average
+out. This assumes that experiments will be repeated. Failure to repeat
+experiments can still lead to mistaking sampling errors for real phenomena.</p>
+
+<h3 id="bias-in-training-data">Bias in Training Data</h3>
+
+<p>This distinction mostly disappears in practice when we talk about sample data
+used to train machine learning models, because these models are often trained
+on existing data sets, so the model creator may have no control over the
+methodology by which the data was collected. Machine learning models generally
+improve their performance as the training sets grow larger. Because of limited
+resources, this creates an incentive to train a model using all of the data
+available. But in practice, it’s unlikely that the sample consisting of all
+available data was drawn in an unbiased way. Furthermore, even if the sample is
+unbiased in the statistical sense above, any known differences in the
+characteristics of the training data and the characteristics of the actual
+population become important to consider, if those models are then used to guide
+decisions with real-world consequences.</p>
+
+<p>Consider for example models being used by judges to predict recidivism rates,
+the likelihood that someone will commit another crime. Various characteristics,
+such as age, the crime committed, the number of prior offenses, are fed into
+the model, and it outputs a probability score. The judge can then use this
+score when deciding someone’s sentence. Someone the model decides is at high
+risk to commit another crime might get a longer sentence from a judge than
+someone at low risk to commit another crime, all other things being equal.</p>
+
+<p>But some of these models have been shown to have a <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">racial
+bias</a>, even though there is no explicit race data used as an
+input. The problem is that the data used to train the model is from a <em>biased
+sample</em>, reflecting other systematic racial biases in the criminal justice
+system.</p>
+
+<p>So what can be done to prevent biased predictions?</p>
+
+<h2 id="mitigating-bias">Mitigating Bias</h2>
+
+<p>In order to avoid making biased predictions, the most important thing we can do
+is have transparency. Transparency in data collection and model construction
+are key to exposing potential bias. When data sets and models are made publicly
+available, statisticians and domain experts have the opportunity to check for
+biases that the model creators may have missed.</p>
+
+<p>One driving force against this kind of transparency is the profit motive.
+Certain models might be closely guarded trade secrets, and data sets from which
+key insights might be gleaned are frequently bought and sold.</p>
+
+<p>Another roadblock to transparency is privacy. Much of the data collected online
+is personal information that may have been voluntarily shared, but for which
+the sharer has an expectation that the information will not be made public. If
+that data is then used in predictive modeling, how can we know whether or not
+those predictions are biased?</p>
+
+<p>Data-driven machine learning models already impact many aspects of our lives,
+through services provided by Facebook, Google, and other tech giants, and new
+applications emerge every day. Overall, machine learning models offer amazing
+potential to positively impact our lives. But as their influence increases, and
+especially in situations where the consequences could be life-altering in ways
+large and small, we should demand transparency wherever possible, while still
+protecting privacy. Without transparency, bias will inevitably thrive in the
+shadows.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-08-29T00:00:00-04:00">August 29, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Bias+in+the+Shadows%20https%3A%2F%2Fsamos570.github.io%2Fbias-in-the-shadows%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsamos570.github.io%2Fbias-in-the-shadows%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fsamos570.github.io%2Fbias-in-the-shadows%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsamos570.github.io%2Fbias-in-the-shadows%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/learning-like-putty/" class="pagination--pager" title="Learning Like Putty
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/learning-like-putty/" rel="permalink">Learning Like Putty
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How does machine learning work? An analogy.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/the-beginning/" rel="permalink">The Beginning
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Rise of the Machines
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/samos570"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Justin Keller. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

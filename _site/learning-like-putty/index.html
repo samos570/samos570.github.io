@@ -18,14 +18,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="samos570.github.io">
 <meta property="og:title" content="Learning Like Putty">
-<meta property="og:url" content="http://localhost:4000/learning-like-putty/">
+<meta property="og:url" content="https://samos570.github.io/learning-like-putty/">
 
 
   <meta property="og:description" content="How does machine learning work? An analogy.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/topomap.png">
+  <meta property="og:image" content="https://samos570.github.io/assets/images/topomap.png">
 
 
 
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/learning-like-putty/">
+<link rel="canonical" href="https://samos570.github.io/learning-like-putty/">
 
 
 
@@ -55,7 +55,7 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Justin Keller",
-      "url": "http://localhost:4000",
+      "url": "https://samos570.github.io",
       "sameAs": null
     }
   </script>
@@ -149,7 +149,7 @@
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/about/" >About</a>
+              <a href="https://samos570.github.io/about/" >About</a>
             </li>
           
         </ul>
@@ -349,9 +349,10 @@ make many detailed careful measurements, and create a set of blueprints for
 recreating all the individual mountains and valleys on the map, then build your
 model from those measurements.</p>
 
-<p>What you created with your measurements was a set of detailed instructions for
-recreating that specific map. If the map was swapped out with another one, say
-a topographical map of Canada, your measurements would no longer be helpful.</p>
+<p>What you’ve created with your measurements is basically a set of detailed
+instructions for recreating that specific map. If the map was swapped out with
+another one, say a topographical map of Canada, your measurements would no
+longer be helpful.</p>
 
 <p>What are the features of this approach?</p>
 
@@ -399,11 +400,11 @@ used for this purpose in all sorts of applications is the deep neural network.</
 <p>Once you have your putty, you need some data that defines your problem. This is
 like the original topographical map. The data has some shape that we want to
 learn. The putty is allowed to change its shape, little by little, according to
-some simple rules. While the actual putty moves to minimize the gravitational
-potential energy, the neural network moves to optimize according to a goal or
-rule that you’ve set in advance, like minimizing some error. By the end, the
-putty has learned the shape of the map, or the neural network has learned the
-<em>shape</em> of the data.</p>
+some simple rules. While the actual putty changes and settles in a way that
+minimizes the gravitational potential energy, the neural network parameters
+change little by little to minimize some quantity you’ve chosen in advance,
+such as an error function. By the end, the putty has learned the shape of the
+map, or the neural network has learned the <em>shape</em> of the data.</p>
 
 <h2 id="most-problems-are-just-topographical-maps">Most problems are just topographical maps.</h2>
 
@@ -415,16 +416,18 @@ and those colors can be represented by numbers. So a picture of a human face is
 a list of numbers. Viewing those numbers as coordinates, the human face becomes
 a single point in the space of all possible images of a certain resolution. If
 we want to learn to recognize human faces, we really just want to learn the
-shape of all points in that larger space that actually represent human faces.
-We want to learn the topography of a certain landscape, in other words.</p>
+shape of the collection of all points in that larger space that actually
+represent human faces.  We want to learn the topography of a certain landscape,
+in other words.</p>
 
-<p>The manifold hypothesis is the idea that real world data sets (like pictures of
-faces) in practice often have a relatively simple shape, out of all the
-possible shapes they could have in principle (not the shape of faces, remember,
-but the shape of the set of all possible human faces). The deep neural network
-is a flexible enough object that it can learn the mountains and valleys of this
-shape, all the small idiosyncrasies. For many kinds of data, this can already
-be done at levels of skill beyond what humans can do on their own.</p>
+<p>The <a href="https://stats.stackexchange.com/questions/66939/what-is-the-manifold-assumption-in-semi-supervised-learning">manifold hypothesis</a> is the idea that real world data
+sets (like pictures of faces) in practice often have a relatively simple shape,
+out of all the possible shapes they could have in principle (not the shape of
+faces, remember, but the shape of the set of all possible human faces). The
+deep neural network is a flexible enough object that it can learn the mountains
+and valleys of this shape, all the small idiosyncrasies. For many kinds of
+data, this can already be done at levels of skill beyond what humans can do on
+their own.</p>
 
 <p>So for example, if we wanted to write a computer program that recognized human
 faces, we’d have to write code – an explicit algorithm – that described
@@ -432,24 +435,33 @@ everything we consciously know about human faces, the colors, the shapes, etc.
 about how to tell if the picture we see is a face. This would be extremely
 difficult and not very accurate.</p>
 
-<p>Even more so because we our brain recognizes a face, we likely can do it
-without even thinking about it! We don’t have to think: does it have the
-features and shapes and colors I expect? No, we just instantly realize it as a
-face. This is because our brains are like a giant implementation of the putty:
-a real-life neural network that has already been molded by our genes and our
-experience to learn the topographical map of human faces. If we can’t
-consciously express all of the rules by which we recognize faces, then we have
-no real hope of writing those rules into an explicit algorithm. This is where
-machine learning comes in. Instead of trying to write out the ruled explicitly,
-i.e. making explicit measurements of every mountain and valley of the
-face-space, we just create a putty, the neural network, and allow it to flow
-over some data. In the end, we get a model that can recognize a human face that
-works in much the same way our own brain recognizes a human face. With enough
-training data and a big enough neural network, it could in principle learn to
-recognize faces better and faster than a human brain. Yikes!</p>
+<p>Even more so because when we recognizes a face, we likely can do it without
+even thinking about it! We don’t have to stop and think: does it have the
+features and shapes and colors I expect? No, instead we just more or less
+instantly realize it as a face. This is because our brains are like a giant
+implementation of the putty: a real-life neural network that has already been
+molded by our genes and our experience to learn the topographical map of human
+face-space, inside the larger space of all images. If we can’t consciously
+express all of the rules by which we recognize faces, then we have no real hope
+of writing those rules into an explicit algorithm.</p>
+
+<p>This is where machine learning comes in. Instead of trying to write out the
+rules explicitly, i.e.  making explicit measurements of every mountain and
+valley of the face-space, we just create a putty, the neural network, and allow
+it to flow over some data. In this case, lots of pictures. In the end, we get a
+model that can recognize a human face that works in much the same way (broadly
+speaking) that our own brain recognizes a human face. With enough training data
+and a big enough neural network, it could in principle learn to recognize faces
+better and faster than a human brain.</p>
+
+<p>Here’s an <a href="https://www.youtube.com/watch?v=G06dEcZ-QTg">example</a> where some researches trained a neural
+network to learn the manifold of celebrity faces. Then, since any point in that
+space should correspond to a celebrity-like face, they can generate new faces
+of non-real celebrities by picking random  points in that space!</p>
 
 <p>Anyway, if you’ve read this far, you’ve got the basic idea of deep learning:
 it’s all about the putty.</p>
+
 
         
       </section>
@@ -469,13 +481,13 @@ it’s all about the putty.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Learning+Like+Putty%20http%3A%2F%2Flocalhost%3A4000%2Flearning-like-putty%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Learning+Like+Putty%20https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning-like-putty%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Flearning-like-putty%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning-like-putty%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsamos570.github.io%2Flearning-like-putty%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -486,7 +498,8 @@ it’s all about the putty.</p>
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/bias-in-the-shadows/" class="pagination--pager" title="Bias in the Shadows
+">Next</a>
     
   </nav>
 
@@ -500,6 +513,34 @@ it’s all about the putty.</p>
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/bias-in-the-shadows/" rel="permalink">Bias in the Shadows
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Understanding Bias
+
+</p>
+  </article>
+</div>
         
           
 
